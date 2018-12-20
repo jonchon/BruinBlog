@@ -1,7 +1,7 @@
 const assert = require('assert');
 const MongoClient = require('mongodb').MongoClient;
 
-const mongo_url = 'mongodb://user:password1@ds157762.mlab.com:57762/heroku_1v46s6wf'
+const mongo_url = 'mongodb://user:password1@ds139944.mlab.com:39944/heroku_fcvclf7m'
 let db;
 
 //Establishes single connection for back-end to communicate to Mongo database with
