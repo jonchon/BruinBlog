@@ -1,7 +1,7 @@
 const assert = require('assert');
 const MongoClient = require('mongodb').MongoClient;
 
-const mongo_url = 'mongodb://localhost:27017/';
+const mongo_url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/';
 let db;
 
 //Establishes single connection for back-end to communicate to Mongo database with
