@@ -1,0 +1,22 @@
+<div  *ngIf="post" class="edit_box">
+	<div id="title">
+		<label>Title:
+			<input type="text" [(ngModel)]="post.title" placeholder="title">
+		</label>
+	</div>
+	<div id="body">
+		<label>Body:
+			<textarea [(ngModel)]="post.body" placeholder="body">
+			</textarea>
+		</label>
+	</div>
+	<div id="dates"> 
+		{{"Modified: " + post.modified}}<br>
+		{{"Created: " + post.created}}
+	</div>
+	<div id="buttons">
+		<button (click)="onDelete()">Delete</button>&nbsp;
+		<button (click)="onSave()">Save</button>&nbsp;
+		<button (click)="onPreview()">Preview</button>
+	</div>
+</div>

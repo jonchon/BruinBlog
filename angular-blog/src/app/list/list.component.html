@@ -1,0 +1,22 @@
+<div class="main">	
+	<div class="post_container">
+		<div class="post_top">
+			<h1>Posts</h1>
+			<button (click)="newPost()">New Post</button><hr>
+		</div>
+		<div class="post_bottom">
+			<ul>
+				<li *ngFor="let post of posts">
+					<a routerLink="/edit/{{post.postid}}" (click)="navigateAway(post.postid)">
+						<div class="post_box" [class.selected]="post === selected">
+							<div class="id_post">&nbsp;{{post.postid}}</div>
+							<div class="title_post">&nbsp;{{post.title}}</div>
+							<div class="created_post">&nbsp;{{post.created | date: 'MM/dd/yyyy HH:mm:ss'}} </div>
+						</div>
+						<br>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

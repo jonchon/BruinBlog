@@ -1,0 +1,59 @@
+input[type=text] {
+	width: 100%;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 12px 15px;
+	box-sizing: border-box;
+	background-color: #2c2d2d;
+	color: white;
+}
+
+textarea {
+	width: 100%;
+	height: calc(100% - 25px);
+	display: inline-block;
+	border-radius: 4px;
+	padding: 12px 15px;
+	box-sizing: border-box;
+	resize: none;
+	background-color: #2c2d2d;
+	color: white;
+}
+
+.edit_box {
+	position:absolute;
+	width: 500px;
+	height: 100%;
+	left: 50%;
+	margin-left: -250px;
+    background-color: rgba(255,255,255, 0.5);
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+
+#title {
+	position: static;
+	padding: 5px 0 5px 0;
+	height: 70px;
+}
+
+#body {
+	position: static;
+	height: calc(100vh - 190px);
+}
+
+#dates {
+	font-size: 15px;
+	height: 60px;
+}
+
+#buttons {
+	height: 50px;
+}
+
+button {
+	background-color: #597182;
+	padding: 10px 24px;
+	cursor: pointer;
+	color: white;
+}
